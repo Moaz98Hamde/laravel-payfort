@@ -1,5 +1,5 @@
 {
-  "name": "wshurafa/laravel-payfort",
+  "name": "AmazonPayments/laravel-payfort",
   "description": "Laravel-payfort is a simple package to process payments throught Payfort payment gateway.",
   "keywords": [
     "http",
@@ -21,7 +21,6 @@
   "license": "MIT",
   "require": {
     "php": "^8.0",
-    "illuminate/support": "^8.50|^9.0",
     "nesbot/carbon": "^2.0",
     "guzzlehttp/guzzle": "^7.2"
   },
@@ -36,12 +35,12 @@
   },
   "extra": {
     "laravel": {
-        "providers": [
-            "LaravelPayfort\\Providers\\PayfortServiceProvider"
-        ],
-        "aliases": {
-            "Payfort": "LaravelPayfort\\Facades\\Payfort"
-        }
+      "providers": [
+        "LaravelPayfort\\Providers\\PayfortServiceProvider"
+      ],
+      "aliases": {
+        "Payfort": "LaravelPayfort\\Facades\\Payfort"
+      }
     }
   }
 }
